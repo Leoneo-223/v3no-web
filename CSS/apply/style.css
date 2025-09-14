@@ -1,0 +1,103 @@
+.main {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh; 
+    display: flex;              
+    font-family: 'Roboto';
+    align-items: center;
+    text-align: left;
+    flex-direction: column;    
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    inset: 0;             
+    background: url('../../IMG/gallery/proj13.png') no-repeat center center;
+    background-size: cover;
+    filter: brightness(50%) blur(5px);
+    z-index: -1;
+}
+
+.p1
+{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+.p2
+{
+    color: rgb(230, 41, 41);
+    font-weight: bold;
+    text-decoration: underline;
+}
+.p67
+{
+    color: rgb(255, 61, 61);
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+.apply-info
+{
+    text-align: left;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: solid rgb(94, 94, 94) 1px;
+    background-color: rgba(0, 0, 0, 0.459);
+    color: rgb(228, 228, 228);
+    width: 40%;
+    
+}
+.apply-info img
+{
+    width: 20px;
+    margin-right: 10px;
+}
+.d1
+{
+    font-size: 40px;
+    margin-top: 5%;
+}
+.p4
+{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+.apply-btn
+{
+    color: white;
+    background-color: rgb(255, 41, 41);
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Roboto';
+    border: none;
+    border-radius: 25px;
+    transition: transform 0.2s ease;
+}
+.apply-btn:hover
+{
+    transition: 200ms;
+    color: white;
+    background-color: rgb(180, 30, 30);
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Roboto';
+    border: none;
+    border-radius: 25px;
+}
+.apply-btn:active
+{
+    transform: scale(1.01);
+    transition: 50ms;
+    color: white;
+    background-color: rgb(255, 50, 50);
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Roboto';
+    border: none;
+    border-radius: 25px;
+}
