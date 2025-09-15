@@ -7,6 +7,7 @@
     align-items: center;
     text-align: left;
     flex-direction: column;    
+    padding: 20px;
 }
 
 .main::before {
@@ -19,56 +20,54 @@
     z-index: -1;
 }
 
-.p1
-{
+.p1 {
     color: white;
     font-size: 50px;
     font-weight: bold;
 }
-.p2
-{
+
+.p2 {
     color: rgb(230, 41, 41);
     font-weight: bold;
     text-decoration: underline;
 }
-.p67
-{
+
+.p67 {
     color: rgb(255, 61, 61);
     font-size: 24px;
     text-align: center;
     font-weight: bold;
 }
-.apply-info
-{
+
+.apply-info {
     text-align: left;
-    padding: 10px;
-    padding-left: 20px;
+    padding: 10px 30px;
     border-radius: 10px;
     border: solid rgb(94, 94, 94) 1px;
     background-color: rgba(0, 0, 0, 0.459);
     color: rgb(228, 228, 228);
     width: 40%;
-    
+    margin-bottom: 20px;
 }
-.apply-info img
-{
+
+.apply-info img {
     width: 20px;
     margin-right: 10px;
 }
-.d1
-{
+
+.d1 {
     font-size: 40px;
-    margin-top: 5%;
+    margin-top: 1%;
 }
-.p4
-{
+
+.p4 {
     color: rgb(255, 255, 255);
     font-size: 50px;
     text-align: center;
     font-weight: bold;
 }
-.apply-btn
-{
+
+.apply-btn {
     color: white;
     background-color: rgb(255, 41, 41);
     padding: 15px;
@@ -78,26 +77,70 @@
     border-radius: 25px;
     transition: transform 0.2s ease;
 }
-.apply-btn:hover
-{
+
+.apply-btn:hover {
     transition: 200ms;
     color: white;
     background-color: rgb(180, 30, 30);
-    padding: 15px;
-    font-size: 20px;
-    font-family: 'Roboto';
-    border: none;
-    border-radius: 25px;
 }
-.apply-btn:active
-{
+
+.apply-btn:active {
     transform: scale(1.01);
     transition: 50ms;
     color: white;
     background-color: rgb(255, 50, 50);
-    padding: 15px;
-    font-size: 20px;
-    font-family: 'Roboto';
-    border: none;
-    border-radius: 25px;
+}
+
+@media (max-width: 1024px) {
+    .apply-info {
+        width: 60%;
+        padding: 15px 20px;
+    }
+    .p1 {
+        font-size: 40px;
+    }
+    .d1 {
+        font-size: 32px;
+    }
+    .p4 {
+        font-size: 40px;
+    }
+    .apply-btn {
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .apply-info {
+        width: 80%;
+        padding: 15px;
+        text-align: center;
+    }
+    .p1, .d1, .p4 {
+        text-align: center;
+    }
+    .apply-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .p1 {
+        font-size: 30px;
+    }
+    .d1 {
+        font-size: 24px;
+    }
+    .p4 {
+        font-size: 28px;
+    }
+    .apply-info {
+        width: 95%;
+        padding: 10px 15px;
+    }
+    .apply-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
 }

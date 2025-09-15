@@ -13,102 +13,161 @@ html, body {
 .main {
     position: relative;
     z-index: 1;
-    min-height: 100vh; 
-    display: flex;              
-    justify-content: center;   
-    align-items: center;   
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .main::before {
     content: "";
     position: absolute;
-    inset: 0;             
+    inset: 0;
     background: url('../../IMG/misc/background-home.png') no-repeat center center;
     background-size: cover;
     filter: brightness(50%) blur(5px);
     z-index: -1;
 }
 
-.page-info
-{   
+.page-info {
     width: 50%;
-    color : rgb(211, 211, 211);
-    height: 500px;
-    padding: 100px;
-    align-content: center;
+    max-width: 600px;
+    color: rgb(211, 211, 211);
+    padding: 60px;
     border-radius: 20px;
     background-color: rgba(240, 248, 255, 0);
     font-size: larger;
     text-align: left;
+    margin-bottom: 20px;
 }
 
-.page-info .name
-{
+.page-info .name {
     font-size: 60px;
     font-weight: bold;
     color: white;
 }
-.page-info .btn
-{
-    width: 20%;
+
+.page-info .btn {
+    width: auto;
     font-size: 20px;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     margin-top: 30px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 10px 70px;
     background-color: white;
     border: none;
     color: black;
     border-radius: 18px;
-    padding: 10px;
     transition: all 0.4s ease;
 }
-.page-info .btn:hover
-{
-    margin-top: 30px;
-    padding-left:50px;
-    padding-right: 50px;
-    border: none;
+
+.page-info .btn:hover {
+    padding: 10px 50px;
     color: rgb(255, 0, 0);
     border-radius: 15px;
-    padding: 10px;
     transform: scale(1.1);
-    transition: 400ms;
 }
-.page-info .btn:active
-{
-    margin-top: 30px;
-    padding-left:50px;
-    padding-right: 50px;
-    background-color: rgb(255, 255, 255);
-    border: none;
+
+.page-info .btn:active {
+    padding: 10px 50px;
+    background-color: white;
     color: black;
     border-radius: 15px;
-    padding: 10px;
     transform: scale(1.1);
     transition: 100ms;
 }
-.page-info2
-{
+
+.page-info2 {
     text-align: left;
-    margin-left: 50px;
-    height: auto;
     width: 20%;
+    min-width: 200px;
     padding: 40px;
-    
+    margin-left: 50px;
     background-color: rgba(255, 255, 255, 0.144);
     border-radius: 15px;
     font-size: 26px;
     color: white;
-    font-weight: bold
-
+    font-weight: bold;
 }
 
-.info-color
-{
+.info-color {
     color: rgb(0, 204, 61);
 }
-.info-color2
-{
+
+.info-color2 {
     color: rgb(255, 0, 0);
+}
+
+/* ===== MOBILE STYLES ===== */
+@media (max-width: 1024px) {
+    .page-info {
+        width: 70%;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .page-info .name {
+        font-size: 48px;
+    }
+
+    .page-info .btn {
+        padding: 10px 50px;
+        font-size: 18px;
+    }
+
+    .page-info2 {
+        width: 50%;
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 22px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-info {
+        width: 90%;
+        padding: 30px;
+        font-size: 1rem;
+    }
+
+    .page-info .name {
+        font-size: 36px;
+    }
+
+    .page-info .btn {
+        width: 80%;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .page-info2 {
+        width: 90%;
+        padding: 20px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-info {
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+
+    .page-info .name {
+        font-size: 28px;
+    }
+
+    .page-info .btn {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .page-info2 {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
 }
