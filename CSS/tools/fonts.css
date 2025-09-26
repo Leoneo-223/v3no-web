@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('/0001/FONT/Roboto-Medium.ttf') format('truetype');
+    src: url('../../FONT/Roboto-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'AD';
-    src: url('/0001/FONT/Another-Danger-Demo.otf') format('truetype');
+    src: url('../../FONT/Another-Danger-Demo.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
